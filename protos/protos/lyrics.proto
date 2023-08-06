@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+
+message Lyrics {
+    int32 id = 1;
+    string title = 2;
+    string content = 3;
+}
+
+
+message GetLyricsByUid {
+    string id = 1;
+}
+
+// Services
+service LyricService {
+    rpc getLyrics(GetLyricsByUid) returns (Lyrics);
+}
