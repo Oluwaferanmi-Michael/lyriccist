@@ -1,13 +1,8 @@
 /// Support for doing something awesome.
 ///
 /// More dartdocs go here.
+library;
 
-library protos;
+export 'src/protos_base.dart';
 
-
-export 'src/generated/lyrics.pb.dart';
-export 'src/generated/lyrics.pbenum.dart';
-export 'src/generated/lyrics.pbjson.dart';
-export 'src/generated/lyrics.pbgrpc.dart';
-
-export 'package:grpc/grpc.dart';
+// TODO: Export any libraries intended for clients of this package.
